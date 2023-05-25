@@ -13,12 +13,12 @@ export default async function page() {
   return (
     <div>
       <Link href={"/carreras/post"}>
-        <button>agregar materia</button>
+        <button>agregar carreras</button>
       </Link>
       <ul>
-        {carreras.map((materia) => (
-          <li>
-            <Link href={`/carreras/${materia._id}`}>{materia.nombre}</Link>
+        {carreras.map((carrera) => (
+          <li key={carrera._id}>
+            <Link href={`/carreras/${carrera._id}`}>{carrera.nombre}</Link>
           </li>
         ))}
       </ul>

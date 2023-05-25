@@ -14,6 +14,8 @@ export default function Navbar() {
         <Option href={"/profesores"} text={"Profesores"} />
         <Option href={"/materias"} text={"Materias"} />
         <Option href={"/carreras"} text={"Carreras"} />
+        <Option href={"/calificar"} text={"Calificar"} />
+        <Option href={"/resultados"} text={"Resultados"} />
       </div>
       <div>
         <SignInButton></SignInButton>

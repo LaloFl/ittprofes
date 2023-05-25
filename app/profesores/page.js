@@ -17,7 +17,7 @@ export default async function page() {
       </Link>
       <ul>
         {profesores.map((profesor) => (
-          <li>
+          <li key={profesor._id}>
             <Link href={`/profesores/${profesor._id}`}>
               {profesor.full_name}
             </Link>
